@@ -1,7 +1,3 @@
-import { contactForm } from './contactUs.js'
-const applicationHTML = `<div> ${contactForm()} </div>`
-const mainContainer = document.querySelector(".container")
-mainContainer.innerHTML = applicationHTML
 
 //Ticket incrementer functions for "here" and "cart" buttons
 let countEl = document.getElementById("count-el")
