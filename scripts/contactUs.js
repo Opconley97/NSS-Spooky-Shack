@@ -63,7 +63,7 @@ document.addEventListener("click",  // This is the type of event
                     )
 
 //Event listener click event for back linke with saw guy pic
-document.addEventListener("click",  // This is the type of event
+document.addEventListener("click",  
     (clickEvent) => {
         
         const itemClicked = clickEvent.target
@@ -74,8 +74,8 @@ document.addEventListener("click",  // This is the type of event
                         }
                     )
 
-//Event listener click event for back linke with saw guy pic
-document.addEventListener("click",  // This is the type of event
+//Click event window alert for "actual" back button. Does not go back, displays form error pop up instead
+document.addEventListener("click",  
     (clickEvent) => {
         
         const itemClicked = clickEvent.target
@@ -96,6 +96,8 @@ document.addEventListener(
                             }
                         }
                     )
+
+//Changes background color to white to highlight "actual" back button
 
 document.addEventListener(
      "change",
