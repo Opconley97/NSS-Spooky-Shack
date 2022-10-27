@@ -55,6 +55,7 @@ h1 {
 /* Below is cursor: */
 html {
     cursor: wait;
+    
 }
 
 #follower {
@@ -192,3 +193,51 @@ html {
         margin-left: -0.5em;
     }
 }
+/*Pulse Cursor Ends Here */
+
+
+/* 
+@keyframes clickEffect {
+    0% {
+        opacity: 1;
+        width: 0.5em;
+        height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.5em;
+    }
+
+    
+    100% {
+        opacity: 0.2;
+        width: 15em;
+        height: 15em;
+        margin: -7.5em;
+        border-width: 0.03em;
+    }
+    
+} */
+/* 
+particle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bodycursor {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.preloader {
+    position: absolute;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png');
+} */
