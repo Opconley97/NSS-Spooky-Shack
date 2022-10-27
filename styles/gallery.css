@@ -1,0 +1,14 @@
+.vid_div_1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0 100px 0;
+}
+
+.vid_div_2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.video {
+    display: flex;
+}
