@@ -1,0 +1,43 @@
+.navLinks {
+    display: flex;
+    margin: 100px;
+    list-style: none;
+    background-color: red;
+    justify-content: space-between;
+
+}
+
+.navItem {
+    display: inline-block;
+    padding: 10px 15px;
+    justify-content: center;
+}
+
+#cart {
+    width: 30px;
+    height: 30px; 
+}
+.buyTickets {
+    display: flex;
+    margin-top: 300px;
+    margin-bottom: 250px;
+    margin-left: 250px;
+    margin-right: 250px;
+    justify-content: center;
+    background-color: red;
+    font-size: 50pt;
+    border-radius: 10%
+}
+
+.buyTixLink {
+
+}
+
+.myersHouse {
+    display:flex;
+    justify-content: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
