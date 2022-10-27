@@ -1,28 +1,60 @@
 @import "./webfontki/stylesheet.css";
 /* Potential Add ons: border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif");*/
+/* .borderimg {
+border: 10px solid ;
+    padding: 15px;
+    border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
+    /* border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 stretch; */
+.test{
+    font-family: "pumpkin_maniabold", Arial, sans-serif;
+    font-size: 100px;
+    display: inline;
+    color: rgb(217, 255, 0);
+    
+}
 
 body {
     background-image: url("https://bestanimations.com/media/skeletons/1985849293skeleton-animated-gif-9.gif");
     background-repeat: repeat;
     background-attachment: fixed;
     /* background-position: center; */
-    color: rgb(255, 0, 0);
-    font-family: "pumpkin_maniabold", Arial, sans-serif;
-    font-size: 100px;
+    
+}
+
+.image-box {
+    /* Here's the trick */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--image-url) ;
+    opacity: 0.3;
+
+    /* Here's the same styles we applied to our content-div earlier */
+    color: white;
+    min-height: 100vh;
+    display: flex-wrap;
+    
 }
 
 
-/* .custom-cursor {
-
-},
-
-.test {
+/* .test {
     display: url("https: //www.vhv.rs/dpng/d/427-4275153_bloody-hand-print-png-png-download-blood-hand.png");
 
-}, */
+} */
 
+
+
+/* For demo only */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+/* Below is cursor: */
 html {
-    cursor: none;
+    cursor: wait;
 }
 
 #follower {
@@ -50,7 +82,7 @@ html {
     /* Chrome, Safari, Opera */
     animation: pulse 4s infinite;
     background: rgba(200, 0, 0, 0.8);
-    border-radius: 50%;
+    border-radius: 510%;
     height: 0em;
     width: 0em;
     margin-top: 0em;
