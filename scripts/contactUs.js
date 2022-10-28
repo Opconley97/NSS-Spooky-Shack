@@ -21,22 +21,13 @@ document.addEventListener("click",
         const itemClicked = clickEvent.target
 
             if (itemClicked.id.startsWith("back")) {
-                        window.alert(`Let's play a game. Select the correct button to turn on the lights and go back to the homepage. Good luck ... `)}
+                        window.alert(`Let's play a game. Select the correct button to go back to the homepage. Good luck ... `)}
         
                         }
                     )
 
 //Click event window alert for "actual" back button. Does not go back, displays form error pop up instead
-document.addEventListener("click",  
-    (clickEvent) => {
-        
-        const itemClicked = clickEvent.target
 
-            if (itemClicked.id.startsWith("back2")) {
-                        window.alert(`Error: Field cannot be left blank.`)}
-        
-                        }
-                    )
 
 //Radio button guessing game to get back to main page                    
 
@@ -51,20 +42,12 @@ document.addEventListener(
 
 //Changes background color to white to highlight "actual" back button
 
-document.addEventListener(
-     "change",
-          (event) => {
-            if (event.target.name === "radio2") {
-                document.body.style.backgroundColor = 'white';
-                                               }
-                                           }
-                                       )
 
 document.addEventListener(
      "change",
         (event) => {
-          if (event.target.name === "radio2") {
-            window.alert(`You have chosen wisely`)
+          if (event.target.name === "home") {
+            window.alert(`You fail`)
           }
         }
  )
