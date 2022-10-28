@@ -1,7 +1,15 @@
+.main {
+    background-image: url("https://media3.giphy.com/media/Ph0oIVQeuvh0k/giphy.gif?cid=ecf05e477gpc72ahegcx9qs3q4ax6z7syfyedq7k3om3ww4v&rid=giphy.gif&ct=g");
+    padding: 20px;
+}
+
 .vid_div_1 {
     display: flex;
     justify-content: space-evenly;
-    padding: 100px 0 100px 0;
+}
+
+.one {
+    background-image: url("https://media1.giphy.com/media/XuBNdP9Pb7W9i/giphy.gif?cid=ecf05e47t7tdu9c650cy1yj8902jpoweu1f7bd0sqi6n2oi7&rid=giphy.gif&ct=g");
 }
 
 .vid_div_2 {
@@ -9,6 +17,12 @@
     justify-content: space-evenly;
 }
 
+.vid_div_3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .video {
     display: flex;
+    padding: 20px;
 }
