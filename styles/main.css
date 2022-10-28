@@ -6,26 +6,30 @@ border: 10px solid ;
     border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
     /* border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 stretch; */
 /* Nav Bar Starts Here: */
+html {
+    cursor: wait;
+    
+}
 .navLinks {
     display: flex;
     margin: 100px;
     list-style: none;
     background-color: red;
-    border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
-    border: 30px solid url;
+    font-size: large;
+    /* border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round; */
     justify-content: space-between;
-
 }
 
 .navItem {
     display: inline-block;
     padding: 10px 15px;
     justify-content: center;
+    
 }
 /* Nav Bar Ends Here */
 
 .test {
-    font-family: "pumpkin_maniabold", Arial, sans-serif;
+    font-family: "friday_terrorregular", Arial, sans-serif;
     font-size: 100px;
     display: inline;
     color: rgb(217, 255, 0);
@@ -36,28 +40,14 @@ body {
     background-image: url("https://bestanimations.com/media/skeletons/1985849293skeleton-animated-gif-9.gif");
     background-repeat: repeat;
     background-attachment: fixed;
-    /* background-position: center; */
-    
-}
-
-
-/* For demo only */
-html,
-body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-}
-
-h1 {
-    font-size: 40px;
-}
-/* Below is cursor: */
-html {
-    cursor: wait;
+    /* font-family: sans-serif; */
     
 }
 
+
+/* Below is pulse cursor STARTS HERE: */
 #follower {
     position: absolute;
     top: 50%;
@@ -193,7 +183,7 @@ html {
         margin-left: -0.5em;
     }
 }
-
+/* Below is pulse cursor ENDS HERE: */
 
 
 #cart {
@@ -224,52 +214,5 @@ html {
     margin-left: 250px;
     margin-right: 250px;
 }
-/*Pulse Cursor Ends Here */
 
-
-/* 
-@keyframes clickEffect {
-    0% {
-        opacity: 1;
-        width: 0.5em;
-        height: 0.5em;
-        margin: -0.25em;
-        border-width: 0.5em;
-    }
-
-    
-    100% {
-        opacity: 0.2;
-        width: 15em;
-        height: 15em;
-        margin: -7.5em;
-        border-width: 0.03em;
-    }
-    
-} */
-/* 
-particle {
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.bodycursor {
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-}
-
-.preloader {
-    position: absolute;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png');
-} */
 
