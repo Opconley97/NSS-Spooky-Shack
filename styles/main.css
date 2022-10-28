@@ -6,6 +6,7 @@ border: 10px solid ;
     border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
     /* border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 stretch; */
 /* Nav Bar Starts Here: */
+
 .navLinks {
     display: flex;
     margin: 100px;
@@ -14,6 +15,11 @@ border: 10px solid ;
     border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
     border: 30px solid url;
     justify-content: space-between;
+    font-family: 'friday_terrorregular';
+    src: url('fridayterror-do4z9-webfont.woff2') format('woff2'),
+         url('fridayterror-do4z9-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
@@ -206,7 +212,12 @@ html {
     justify-content: center;
     background-color: red;
     font-size: 50pt;
-    border-radius: 10%
+    border-radius: 10%;
+    font-family: 'friday_terrorregular';
+    src: url('fridayterror-do4z9-webfont.woff2') format('woff2'),
+         url('fridayterror-do4z9-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* .buyTixLink {
