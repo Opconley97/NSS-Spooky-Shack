@@ -5,7 +5,26 @@ border: 10px solid ;
     padding: 15px;
     border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
     /* border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 stretch; */
-.test{
+/* Nav Bar Starts Here: */
+.navLinks {
+    display: flex;
+    margin: 100px;
+    list-style: none;
+    background-color: red;
+    border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
+    border: 30px solid url;
+    justify-content: space-between;
+
+}
+
+.navItem {
+    display: inline-block;
+    padding: 10px 15px;
+    justify-content: center;
+}
+/* Nav Bar Ends Here */
+
+.test {
     font-family: "pumpkin_maniabold", Arial, sans-serif;
     font-size: 100px;
     display: inline;
@@ -20,25 +39,6 @@ body {
     /* background-position: center; */
     
 }
-
-.image-box {
-    /* Here's the trick */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--image-url) ;
-    opacity: 0.3;
-
-    /* Here's the same styles we applied to our content-div earlier */
-    color: white;
-    min-height: 100vh;
-    display: flex-wrap;
-    
-}
-
-
-/* .test {
-    display: url("https: //www.vhv.rs/dpng/d/427-4275153_bloody-hand-print-png-png-download-blood-hand.png");
-
-} */
-
 
 
 /* For demo only */
@@ -193,6 +193,37 @@ html {
         margin-left: -0.5em;
     }
 }
+
+
+
+#cart {
+    width: 30px;
+    height: 30px; 
+}
+.buyTickets {
+    display: flex;
+    margin-top: 300px;
+    margin-bottom: 250px;
+    margin-left: 250px;
+    margin-right: 250px;
+    justify-content: center;
+    background-color: red;
+    font-size: 50pt;
+    border-radius: 10%
+}
+
+/* .buyTixLink {
+
+} */
+
+.myersHouse {
+    display:flex;
+    justify-content: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
 /*Pulse Cursor Ends Here */
 
 
@@ -241,46 +272,4 @@ particle {
     position: absolute;
     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png');
 } */
-.navLinks {
-    display: flex;
-    margin: 100px;
-    list-style: none;
-    background-color: red;
-    justify-content: space-between;
 
-}
-
-.navItem {
-    display: inline-block;
-    padding: 10px 15px;
-    justify-content: center;
-}
-
-#cart {
-    width: 30px;
-    height: 30px; 
-}
-.buyTickets {
-    display: flex;
-    margin-top: 300px;
-    margin-bottom: 250px;
-    margin-left: 250px;
-    margin-right: 250px;
-    justify-content: center;
-    background-color: red;
-    font-size: 50pt;
-    border-radius: 10%
-}
-
-/* .buyTixLink {
-
-} */
-
-.myersHouse {
-    display:flex;
-    justify-content: center;
-    margin-top: 300px;
-    margin-bottom: 300px;
-    margin-left: 250px;
-    margin-right: 250px;
-}
