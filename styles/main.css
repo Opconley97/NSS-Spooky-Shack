@@ -6,32 +6,30 @@ border: 10px solid ;
     border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
     /* border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 stretch; */
 /* Nav Bar Starts Here: */
-
+html {
+    cursor: wait;
+    
+}
 .navLinks {
     display: flex;
     margin: 100px;
     list-style: none;
     background-color: red;
-    border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round;
-    border: 30px solid url;
+    font-size: large;
+    /* border-image: url("https://media1.giphy.com/media/QuxqWk7m9ffxyfoa0a/giphy.gif") 30 round; */
     justify-content: space-between;
-    font-family: 'friday_terrorregular';
-    src: url('fridayterror-do4z9-webfont.woff2') format('woff2'),
-         url('fridayterror-do4z9-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 .navItem {
     display: inline-block;
     padding: 10px 15px;
     justify-content: center;
+    
 }
 /* Nav Bar Ends Here */
 
 .test {
-    font-family: "pumpkin_maniabold", Arial, sans-serif;
+    font-family: "friday_terrorregular", Arial, sans-serif;
     font-size: 100px;
     display: inline;
     color: rgb(217, 255, 0);
@@ -42,161 +40,10 @@ body {
     background-image: url("https://bestanimations.com/media/skeletons/1985849293skeleton-animated-gif-9.gif");
     background-repeat: repeat;
     background-attachment: fixed;
-    /* background-position: center; */ 
-}
-
-
-/* For demo only */
-html,
-body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-}
-
-h1 {
-    font-size: 40px;
-}
-/* Below is cursor: */
-html {
-    cursor: wait;
+    /* font-family: sans-serif; */
     
-}
-
-#follower {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-#follower #circle1 {
-    position: absolute;
-    -webkit-animation: pulse 2s infinite;
-    /* Chrome, Safari, Opera */
-    animation: pulse 2s infinite;
-    background: #fff;
-    border-radius: 50%;
-    height: 0em;
-    width: 0em;
-    margin-top: 0em;
-    margin-left: 0em;
-}
-
-#follower #circle2 {
-    position: absolute;
-    -webkit-animation: pulse 4s infinite;
-    /* Chrome, Safari, Opera */
-    animation: pulse 4s infinite;
-    background: rgba(200, 0, 0, 0.8);
-    border-radius: 510%;
-    height: 0em;
-    width: 0em;
-    margin-top: 0em;
-    margin-left: 0em;
-}
-
-@-moz-keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-}
-
-@-o-keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-}
-
-@keyframes pulse {
-    0% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
-
-    50% {
-        opacity: 0.9;
-        height: 3em;
-        width: 3em;
-        margin-top: -1.5em;
-        margin-left: -1.5em;
-    }
-
-    100% {
-        opacity: 0.2;
-        height: 1em;
-        width: 1em;
-        margin-top: -0.5em;
-        margin-left: -0.5em;
-    }
 }
 
 #cart {
@@ -232,52 +79,5 @@ html {
     margin-left: 250px;
     margin-right: 250px;
 }
-/*Pulse Cursor Ends Here */
 
-
-/* 
-@keyframes clickEffect {
-    0% {
-        opacity: 1;
-        width: 0.5em;
-        height: 0.5em;
-        margin: -0.25em;
-        border-width: 0.5em;
-    }
-
-    
-    100% {
-        opacity: 0.2;
-        width: 15em;
-        height: 15em;
-        margin: -7.5em;
-        border-width: 0.03em;
-    }
-    
-} */
-/* 
-particle {
-    position: fixed;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.bodycursor {
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-}
-
-.preloader {
-    position: absolute;
-    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png');
-} */
 

@@ -1,12 +1,11 @@
-
 //Ticket incrementer functions for "here" and "cart" buttons
-let countEl = document.getElementById("count-el")
-let count = 0
+// let countEl = document.getElementById("count-el")
+// let count = 0
 
-function increment() {
-    count += 1
-    countEl.textContent = count
-}
+// function increment() {
+//     count += 1
+//     countEl.textContent = count
+// }
 
 // const addTix = increment()
 
@@ -14,9 +13,9 @@ const btnContainer = document.querySelector("#buybtn")
 
 //onclick=${addTix}
 
-const applicationHTML = `<button id="increment" onclick=${increment()}>Here</button>`
+// const applicationHTML = `<button id="increment" onclick=${increment()}>Here</button>`
 
-btnContainer.innerHTML = applicationHTML
+// btnContainer.innerHTML = applicationHTML
 
 // document.addEventListener("click",  
 //     (clickEvent) => {
@@ -36,395 +35,143 @@ btnContainer.innerHTML = applicationHTML
 //             )
 
 //Event listener for pop ups when cart is clicked. Results in multiple window alerts
-document.addEventListener("click",  
+document.addEventListener("click",
     (clickEvent) => {
 
         const itemClicked = clickEvent.target
-        
+
         if (itemClicked.id.startsWith("cart")) {
-                    window.alert(`Your cart is now empty.`)}
+            window.alert(`Your cart is now empty.`)
+        }
 
-                }
-            )
+    }
+)
 
-document.addEventListener("click",  
+document.addEventListener("click",
     (clickEvent) => {
-        
+
         const itemClicked = clickEvent.target
 
-            if (itemClicked.id.startsWith("cart")) {
-                        window.alert(`Ready to checkout?`)}
-        
-                        }
-                    )
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Ready to checkout?`)
+        }
 
-document.addEventListener("click",  
+    }
+)
+
+document.addEventListener("click",
     (clickEvent) => {
-                        
+
         const itemClicked = clickEvent.target
-                
-            if (itemClicked.id.startsWith("cart")) {
-            window.alert(`Add items to checkout`)}
-                        
-                         }
-                     )
-                     document.addEventListener("click",  
-                     (clickEvent) => {
-                 
-                         const itemClicked = clickEvent.target
-                         
-                         if (itemClicked.id.startsWith("cart")) {
-                                     window.alert(`Your cart is now empty.`)}
-                 
-                                 }
-                             )
-                 
-                 document.addEventListener("click",  
-                     (clickEvent) => {
-                         
-                         const itemClicked = clickEvent.target
-                 
-                             if (itemClicked.id.startsWith("cart")) {
-                                         window.alert(`Ready to checkout?`)}
-                         
-                                         }
-                                     )
-                 
-                 document.addEventListener("click",  
-                     (clickEvent) => {
-                                         
-                         const itemClicked = clickEvent.target
-                                 
-                             if (itemClicked.id.startsWith("cart")) {
-                             window.alert(`Add items to checkout`)}
-                                         
-                                          }
-                                      )
-                                      document.addEventListener("click",  
-                                      (clickEvent) => {
-                                  
-                                          const itemClicked = clickEvent.target
-                                          
-                                          if (itemClicked.id.startsWith("cart")) {
-                                                      window.alert(`Your cart is now empty.`)}
-                                  
-                                                  }
-                                              )
-                                  
-                                  document.addEventListener("click",  
-                                      (clickEvent) => {
-                                          
-                                          const itemClicked = clickEvent.target
-                                  
-                                              if (itemClicked.id.startsWith("cart")) {
-                                                          window.alert(`Ready to checkout?`)}
-                                          
-                                                          }
-                                                      )
-                                  
-                                  document.addEventListener("click",  
-                                      (clickEvent) => {
-                                                          
-                                          const itemClicked = clickEvent.target
-                                                  
-                                              if (itemClicked.id.startsWith("cart")) {
-                                              window.alert(`Add items to checkout`)}
-                                                          
-                                                           }
-                                                       )
-                                                       document.addEventListener("click",  
-                                                       (clickEvent) => {
-                                                   
-                                                           const itemClicked = clickEvent.target
-                                                           
-                                                           if (itemClicked.id.startsWith("cart")) {
-                                                                       window.alert(`Your cart is now empty.`)}
-                                                   
-                                                                   }
-                                                               )
-                                                   
-                                                   document.addEventListener("click",  
-                                                       (clickEvent) => {
-                                                           
-                                                           const itemClicked = clickEvent.target
-                                                   
-                                                               if (itemClicked.id.startsWith("cart")) {
-                                                                           window.alert(`Ready to checkout?`)}
-                                                           
-                                                                           }
-                                                                       )
-                                                   
-                                                   document.addEventListener("click",  
-                                                       (clickEvent) => {
-                                                                           
-                                                           const itemClicked = clickEvent.target
-                                                                   
-                                                               if (itemClicked.id.startsWith("cart")) {
-                                                               window.alert(`Add items to checkout`)}
-                                                                           
-                                                                            }
-                                                                        )
-/*Cursor code: DON'T TOUCH  */
-(function () {
-    var follower, init, mouseX, mouseY, positionElement, printout, timer;
 
-    follower = document.getElementById('follower');
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Add items to checkout`)
+        }
 
-    printout = document.getElementById('printout');
+    }
+)
+document.addEventListener("click",
+    (clickEvent) => {
 
-    mouseX = (event) => {
-        return event.clientX;
-    };
+        const itemClicked = clickEvent.target
 
-    mouseY = (event) => {
-        return event.clientY;
-    };
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Your cart is now empty.`)
+        }
 
-    positionElement = (event) => {
-        var mouse;
-        mouse = {
-            x: mouseX(event),
-            y: mouseY(event)
-        };
-        follower.style.top = mouse.y + 'px';
-        return follower.style.left = mouse.x + 'px';
-    };
+    }
+)
 
-    timer = false;
+document.addEventListener("click",
+    (clickEvent) => {
 
-    window.onmousemove = init = (event) => {
-        var _event;
-        _event = event;
-        return timer = setTimeout(() => {
-            return positionElement(_event);
-        }, 1);
-    };
+        const itemClicked = clickEvent.target
 
-}).call(this);
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Ready to checkout?`)
+        }
 
-//# sourceMappingURL=data:application/json;base64,
-//# sourceURL=coffeescript
-/* CURSOR CODE ENDS HERE */
+    }
+)
 
+document.addEventListener("click",
+    (clickEvent) => {
 
-/* Firework animation Click effect: */
-// function pop(e) {
-//     let amount = 30;
-//     switch (e.target.dataset.type) {
-//         case 'shadow':
-//         case 'line':
-//             amount = 60;
-//             break;
-//     }
-//     // Quick check if user clicked the button using a keyboard
-//     if (e.clientX === 0 && e.clientY === 0) {
-//         const bbox = e.target.getBoundingClientRect();
-//         const x = bbox.left + bbox.width / 2;
-//         const y = bbox.top + bbox.height / 2;
-//         for (let i = 0; i < 30; i++) {
-//             // We call the function createParticle 30 times
-//             // We pass the coordinates of the button for x & y values
-//             createParticle(x, y, e.target.dataset.type);
-//         }
-//     } else {
-//         for (let i = 0; i < amount; i++) {
-//             createParticle(e.clientX, e.clientY + window.scrollY, e.target.dataset.type);
-//         }
-//     }
-// }
+        const itemClicked = clickEvent.target
 
-// function createParticle(x, y, type) {
-//     const particle = document.createElement('particle');
-//     document.body.appendChild(particle);
-//     let width = Math.floor(Math.random() * 30 + 8);
-//     let height = width;
-//     let destinationX = (Math.random() - 0.5) * 300;
-//     let destinationY = (Math.random() - 0.5) * 300;
-//     let rotation = Math.random() * 520;
-//     let delay = Math.random() * 200;
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Add items to checkout`)
+        }
 
-//     switch (type) {
-//         case 'emoji':
-//             particle.innerHTML = ['🎃'][Math.floor(Math.random() * 7)];
-//             particle.style.fontSize = `${Math.random() * 24 + 10}px`;
-//             width = height = 'auto';
-//             break;
-//     }
+    }
+)
+document.addEventListener("click",
+    (clickEvent) => {
 
-//     particle.style.width = `${width}px`;
-//     particle.style.height = `${height}px`;
-//     const animation = particle.animate([
-//         {
-//             transform: `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(0deg)`,
-//             opacity: 1
-//         },
-//         {
-//             transform: `translate(-50%, -50%) translate(${x + destinationX}px, ${y + destinationY}px) rotate(${rotation}deg)`,
-//             opacity: 0
-//         }
-//     ], {
-//         duration: Math.random() * 1000 + 5000,
-//         easing: 'cubic-bezier(0, .9, .57, 1)',
-//         delay: delay
-//     });
-//     animation.onfinish = removeParticle;
-// }
-// function removeParticle(e) {
-//     e.srcElement.effect.target.remove();
-// }
-// document.addEventListener("click", (e) => {
-//     // Get the position of the cursor in the document
-//     const { clientX: x, clientY: y } = e;
+        const itemClicked = clickEvent.target
 
-//     // Create multiple particles
-//     for (let i = 0; i < PARTICLES_NUMBER; i++) {
-//         createParticle(x, y);
-//     }
-// });
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Your cart is now empty.`)
+        }
 
+    }
+)
 
-// // A list of all possible colors
-// const COLORS = new Image();
-// COLORS.src = "https://img.favpng.com/3/14/13/halloween-calabaza-jack-o-lantern-pumpkin-icon-png-favpng-TcpDeXZVK6ds1j7uP27TTq46e.jpg"
-// // Defines the particle number
-// const PARTICLES_NUMBER = 20;
+document.addEventListener("click",
+    (clickEvent) => {
 
-// function createParticle(x, y) {
-//     const element = document.createElement("div");
-//     // element.style.width = "30px";
-//     // element.style.height = "30px";
-//     // element.style.border = "1px solid black";
-//     // The elements are in absolute position
-//     element.style.position = "absolute";
-//     element.style.top = `${y}px`;
-//     element.style.left = `${x}px`;
-//     // We want our cursor to be centered in the square
-//     element.style.transform = "translate(-50%, -50%)";
-//     // Get a color randomly
-//     // element.style.backgroundColor =
-//     //     COLORS[Math.floor(Math.random() * COLORS.length)];
+        const itemClicked = clickEvent.target
 
-//     const animation = element.animate(
-//         [
-//             {
-//                 // Math.random() - 0.5 returns integer between -0.5 and 0.5
-//                 transform: `translate(${(Math.random() - 0.5) * 500}px, ${(Math.random() - 0.5) * 500
-//                     }px) rotate(${Math.random() * 520}deg)`,
-//                 // We want to reduce the opacity until 0
-//                 opacity: 0
-//             }
-//         ],
-//         1500
-//     );
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Ready to checkout?`)
+        }
 
-//     // Remove the particle at the end of animation
-//     animation.finished.then(() => element.remove());
+    }
+)
 
-//     document.body.appendChild(element);
-// }
+document.addEventListener("click",
+    (clickEvent) => {
 
-// document.addEventListener("click", (e) => {
-//     // Get the position of the cursor in the document
-//     const { clientX: x, clientY: y } = e;
+        const itemClicked = clickEvent.target
 
-//     // Create multiple particles
-//     for (let i = 0; i < PARTICLES_NUMBER; i++) {
-//         createParticle(x, y);
-//     }
-// });
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Add items to checkout`)
+        }
 
+    }
+)
+document.addEventListener("click",
+    (clickEvent) => {
 
+        const itemClicked = clickEvent.target
 
-// function pop(e) {
-//     let amount = 30;
-//     switch (e.target.dataset.type) {
-       
-        
-//     }
-//     // Quick check if user clicked the button using a keyboard
-//     // if (e.clientX === 0 && e.clientY === 0) {
-//     //     const bbox = e.target.getBoundingClientRect();
-//     //     const x = bbox.left + bbox.width / 2;
-//     //     const y = bbox.top + bbox.height / 2;
-//     //     for (let i = 0; i < 30; i++) {
-//     //         // We call the function createParticle 30 times
-//     //         // We pass the coordinates of the button for x & y values
-//     //         createParticle(x, y, e.target.dataset.type);
-//     //     }
-//     // } else {
-//     //     for (let i = 0; i < amount; i++) {
-//     //         createParticle(e.clientX, e.clientY + window.scrollY, e.target.dataset.type);
-//     //     }
-//     }
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Your cart is now empty.`)
+        }
 
-// function createParticle(x, y, type) {
-//     const particle = document.createElement("particle");
-//     particle.style.width = "30px";
-//     particle.style.height = "30px";
-//     particle.style.border = "1px solid black";
-//     // The elements are in absolute position
-//     particle.style.position = "absolute";
-//     particle.style.top = `${y}px`;
-//     particle.style.left = `${x}px`;
-//     // We want our cursor to be centered in the square
-//     particle.style.transform = "translate(-50%, -50%)";
+    }
+)
 
-//     switch (type) {
-        
-//         case 'mario':
-//             particle.style.backgroundImage = 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/127738/mario-face.png)';
-//             break;
-        
-//     }
+document.addEventListener("click",
+    (clickEvent) => {
 
-//     particle.style.width = `${width}px`;
-//     particle.style.height = `${height}px`;
-//     const animation = particle.animate([
+        const itemClicked = clickEvent.target
 
-//         {
-//             // Math.random() - 0.5 returns integer between -0.5 and 0.5
-//             transform: `translate(${(Math.random() - 0.5) * 500}px, ${(Math.random() - 0.5) * 500
-//                 }px) rotate(${Math.random() * 520}deg)`,
-//             // We want to reduce the opacity until 0
-//             opacity: 0
-//         }
-//         // {
-//         //     transform: `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(0deg)`,
-//         //     opacity: 1
-//         // },
-//         // {
-//         //     transform: `translate(-50%, -50%) translate(${x + destinationX}px, ${y + destinationY}px) rotate(${rotation}deg)`,
-//         //     opacity: 0
-//         // }
-//     ], 
-//     1500
-//     // {
-//     //     duration: Math.random() * 1000 + 5000,
-//     //     easing: 'cubic-bezier(0, .9, .57, 1)',
-//     //     delay: delay
-//     // }
-//     );
-//     animation.onfinish = removeParticle;
-//     // Remove the particle at the end of animation
-//     animation.finished.then(() => particle.remove());
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Ready to checkout?`)
+        }
 
-//     document.body.appendChild(particle);
-// }
-// // function removeParticle(e) {
-// //     e.srcElement.effect.target.remove();
-// // }
+    }
+)
 
-// // if (document.body.animate) {
-// //     document.querySelectorAll('div').forEach(button => button.addEventListener('click', pop));
-// // }
+document.addEventListener("click",
+    (clickEvent) => {
 
-// document.addEventListener("click", (e) => {
-//     // Get the position of the cursor in the document
-//     const { clientX: x, clientY: y } = e;
+        const itemClicked = clickEvent.target
 
-//     // Create multiple particles
-//     for (let i = 0; i < PARTICLES_NUMBER; i++) {
-//         createParticle(x, y, type);
-//     }
-// });
+        if (itemClicked.id.startsWith("cart")) {
+            window.alert(`Add items to checkout`)
+        }
 
+    }
+)
