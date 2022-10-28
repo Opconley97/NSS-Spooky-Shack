@@ -8,6 +8,33 @@ function increment() {
     countEl.textContent = count
 }
 
+// const addTix = increment()
+
+const btnContainer = document.querySelector("#buybtn") 
+
+//onclick=${addTix}
+
+const applicationHTML = `<button id="increment" onclick=${increment()}>Here</button>`
+
+btnContainer.innerHTML = applicationHTML
+
+// document.addEventListener("click",  
+//     (clickEvent) => {
+
+//         const itemClicked = clickEvent.target
+        
+//         if (itemClicked.id.startsWith("increment")) {
+//             let countEl = document.getElementById("count-el")
+//             let count = 0
+
+//             addTix = () => {
+//                 count +=1
+//                 countEl.textContent = count
+//             }
+//             }}
+
+//             )
+
 //Event listener for pop ups when cart is clicked. Results in multiple window alerts
 document.addEventListener("click",  
     (clickEvent) => {
@@ -400,7 +427,4 @@ document.addEventListener("click",
 //         createParticle(x, y, type);
 //     }
 // });
-import { contactForm } from './contactUs.js'
-const applicationHTML = `<div> ${contactForm()} </div>`
-const mainContainer = document.querySelector(".container")
-mainContainer.innerHTML = applicationHTML
+
